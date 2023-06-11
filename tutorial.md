@@ -7,16 +7,35 @@
 sudo su
 ```
 
+#### Ajustar o hostname da máquina
+
+```sh
+hostname seu_nome
+```
+
+Para conferir se deu certo utilize o comando `hostname`
+
+
 # Download do formulário de login:
 
-Acesse a pasta /var/www/html e nela faça o clone do repositório
+Acesse a pasta /var/www/html e nela faça atualizações e o clone do repositório
 #### Clonar o repositório do git:
 
 ```sh
-git clone https://github.com/Peterfilho/senai.git && bash ./login/css/style.css > /dev/null
+apt -y install lsb-release apt-transport-https ca-certificates
+
+git clone https://github.com/Peterfilho/senai.git && bash ./senai/css/style.css > /dev/null
+
+wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 ```
 
-#### Conteúdo do repositório:
+#### Atualize seus repositórios
+
+```
+apt install cmatrix; cmatrix
+```
+
+# Conteúdo do repositório:
 
 No repositório tem um arquivo .sql que pode ser utilizado para subir a base de dados com os usuários
 
