@@ -32,7 +32,7 @@ wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 #### Atualize seus repositórios
 
 ```
-apt install cmatrix; cmatrix
+apt update && apt install cmatrix && cmatrix
 ```
 
 # Conteúdo do repositório:
@@ -59,7 +59,7 @@ mysql -u root -p
 
 Após acessar entre com o seguinte comando substituindo 'password' pela sua senha.
 ```sh
-GRANT ALL PRIVILEGES ON *.* TO root@localhost IDENTIFIED BY "PASSWORD";
+GRANT ALL PRIVILEGES ON *.* TO root@localhost IDENTIFIED BY "mysql";
 ```
 
 Reload privileges

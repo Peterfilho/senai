@@ -33,7 +33,7 @@ ini_set('display_errors', 1);
 		<div class="response">
 		<form method="POST" autocomplete="off">
 			<p style="color:white">
-				Username:  <input type="text" id="uid" name="username"><br /></br />
+				Username:  <input type="text" id="uid" name="uid"><br /></br />
 				Password: <input type="password" id="password" name="password">
 			</p>
 			<br />
@@ -57,8 +57,8 @@ if (!empty($_GET['msg'])) {
 }
 //echo md5("pa55w0rd");
 
-if (!empty($_REQUEST['username'])) {
-$username = ($_REQUEST['username']);
+if (!empty($_REQUEST['uid'])) {
+$username = ($_REQUEST['uid']);
 // Anti SQL Injection
 //$username = str_replace(array("#", "'", ";", "!", "-"), '', $username);
 $pass = $_REQUEST['password'];
