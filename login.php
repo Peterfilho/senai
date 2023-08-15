@@ -24,7 +24,7 @@ ini_set('display_errors', 1);
   <div class="container-narrow">
 
 		<div class="jumbotron">
-      <img height="10%" src="https://oamengenharia.com.br/wp-content/uploads/2018/09/Logo-SENAI.png" />
+      <img height="13%" src="https://evento.unicentro.br/files/Eventos/car_banner1/28_07_2023_event_0815449824.jpg" />
       <!-- <p class="lead" style="color:white">
 				ACT Academy
 			</p> -->
